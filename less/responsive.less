@@ -13,36 +13,41 @@
 // For phone and tablet devices
 // -------------------------------------------------------------
 
+//KeyLines namespacing to avoid css clashes with surrounding page
 
-// REPEAT VARIABLES & MIXINS
-// -------------------------
-// Required since we compile the responsive stuff separately
+.kl {
 
-@import "variables.less"; // Modify this for custom colors, font-sizes, etc
-@import "mixins.less";
+  // REPEAT VARIABLES & MIXINS
+  // -------------------------
+  // Required since we compile the responsive stuff separately
 
-
-// RESPONSIVE CLASSES
-// ------------------
-
-@import "responsive-utilities.less";
+  @import "variables.less"; // Modify this for custom colors, font-sizes, etc
+  @import "mixins.less";
 
 
-// MEDIA QUERIES
-// ------------------
+  // RESPONSIVE CLASSES
+  // ------------------
 
-// Large desktops
-@import "responsive-1200px-min.less";
-
-// Tablets to regular desktops
-@import "responsive-768px-979px.less";
-
-// Phones to portrait tablets and narrow desktops
-@import "responsive-767px-max.less";
+  @import "responsive-utilities.less";
 
 
-// RESPONSIVE NAVBAR
-// ------------------
+  // MEDIA QUERIES
+  // ------------------
 
-// From 979px and below, show a button to toggle navbar contents
-@import "responsive-navbar.less";
+  // Large desktops
+  @import "responsive-1200px-min.less";
+
+  // Tablets to regular desktops
+  @import "responsive-768px-979px.less";
+
+  // Phones to portrait tablets and narrow desktops
+  @import "responsive-767px-max.less";
+
+
+  // RESPONSIVE NAVBAR
+  // ------------------
+
+  // From 979px and below, show a button to toggle navbar contents
+  @import "responsive-navbar.less";
+
+}
