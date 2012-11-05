@@ -40,7 +40,7 @@
 // -------------------------
 @linkColor:             #08c;
 @linkColorHover:        darken(@linkColor, 15%);
-@disabledNavbar:        #DDD;
+@disabledNavbar:        #AAA;
 
 
 // Typography
@@ -159,30 +159,30 @@
 // -------------------------
 @navbarCollapseWidth:             979px;
 
-@navbarHeight:                    40px;
-@navbarBackgroundHighlight:       #00aeea;
-@navbarBackground:                lighten(@navbarBackgroundHighlight, 5%);
-@navbarBorder:                    @navbarBackground;
+@navbarHeight:                    30px;
+@navbarBackgroundHighlight:       #cccccc;
+@navbarBackground:                #e5e5e5;
+@navbarBorder:                    darken(@navbarBackground, 5%);
 
 @navbarText:                      #777;
-@navbarLinkColor:                 @white;
-@navbarLinkColorHover:            @white;
-@navbarLinkColorActive:           @white;
+@navbarLinkColor:                 @grayDark;
+@navbarLinkColorHover:            @grayDark;
+@navbarLinkColorActive:           @grayDark;
 @navbarLinkBackgroundHover:       lighten(@navbarBackground, 10%);
-@navbarLinkBackgroundActive:      darken(@navbarBackground, 5%);
+@navbarLinkBackgroundActive:      @white;
 
 @navbarBrandColor:                @navbarLinkColor;
 
 // Inverted navbar
-@navbarInverseBackground:                #111111;
-@navbarInverseBackgroundHighlight:       #222222;
-@navbarInverseBorder:                    #252525;
+@navbarInverseBackground:                @white;
+@navbarInverseBackgroundHighlight:       @white;
+@navbarInverseBorder:                    @white;
 
-@navbarInverseText:                      @grayLight;
-@navbarInverseLinkColor:                 @grayLight;
-@navbarInverseLinkColorHover:            @white;
+@navbarInverseText:                      @grayDark;
+@navbarInverseLinkColor:                 @grayDark;
+@navbarInverseLinkColorHover:            @black;
 @navbarInverseLinkColorActive:           @navbarInverseLinkColorHover;
-@navbarInverseLinkBackgroundHover:       transparent;
+@navbarInverseLinkBackgroundHover:       @white;
 @navbarInverseLinkBackgroundActive:      @navbarInverseBackground;
 
 @navbarInverseSearchBackground:          lighten(@navbarInverseBackground, 25%);
