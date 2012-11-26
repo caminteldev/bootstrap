@@ -4728,6 +4728,7 @@ textarea.span1,
   padding: 5px 15px 5px;
   color: #333333;
   text-decoration: none;
+  text-shadow: none;
 }
 
 .kl .navbar .nav .dropdown-toggle .caret {
