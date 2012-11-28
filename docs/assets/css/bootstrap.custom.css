@@ -9,6 +9,12 @@
    * Designed and built with all the love in the world @twitter by @mdo and @fat.
    */
 
+  margin: 0;
+  font-family: Ubuntu, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;
+  background-color: #ffffff;
   /* Allow for input prepend/append in search forms */
 
   /*  Font Awesome
@@ -2183,8 +2189,8 @@ textarea.span1,
   font-family: 'FontAwesome';
   font-style: normal;
   font-weight: normal;
-  src: url('/fonts/fontawesome-webfont.eot');
-  src: url('/fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/fontawesome-webfont.woff') format('woff'), url('/fonts/fontawesome-webfont.ttf') format('truetype'), url('/fonts/fontawesome-webfont.svg#FontAwesome') format('svg');
+  src: url('../fonts/fontawesome-webfont.eot');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff') format('woff'), url('../fonts/fontawesome-webfont.ttf') format('truetype'), url('../fonts/fontawesome-webfont.svg#FontAwesome') format('svg');
 }
 
 .kl [class^="icon-"]:before,
@@ -3176,14 +3182,13 @@ textarea.span1,
   color: #333333;
   text-decoration: none;
   background-color: #e5e5e5;
-  background-color: #e0e0e0;
-  background-image: -moz-linear-gradient(top, #e5e5e5, #d8d8d8);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#e5e5e5), to(#d8d8d8));
-  background-image: -webkit-linear-gradient(top, #e5e5e5, #d8d8d8);
-  background-image: -o-linear-gradient(top, #e5e5e5, #d8d8d8);
-  background-image: linear-gradient(to bottom, #e5e5e5, #d8d8d8);
+  background-image: -moz-linear-gradient(top, #e5e5e5, #e5e5e5);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#e5e5e5), to(#e5e5e5));
+  background-image: -webkit-linear-gradient(top, #e5e5e5, #e5e5e5);
+  background-image: -o-linear-gradient(top, #e5e5e5, #e5e5e5);
+  background-image: linear-gradient(to bottom, #e5e5e5, #e5e5e5);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe5e5e5', endColorstr='#ffd8d8d8', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe5e5e5', endColorstr='#ffe5e5e5', GradientType=0);
 }
 
 .kl .dropdown-menu .active > a,
@@ -4497,7 +4502,7 @@ textarea.span1,
 .kl .navbar {
   *position: relative;
   *z-index: 2;
-  margin-bottom: 20px;
+  margin-bottom: 0;
   overflow: visible;
   color: #777777;
 }
@@ -4506,22 +4511,19 @@ textarea.span1,
   min-height: 30px;
   padding-right: 20px;
   padding-left: 20px;
-  background-color: #96b6b9;
-  background-image: -moz-linear-gradient(top, #cccccc, #46949d);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#cccccc), to(#46949d));
-  background-image: -webkit-linear-gradient(top, #cccccc, #46949d);
-  background-image: -o-linear-gradient(top, #cccccc, #46949d);
-  background-image: linear-gradient(to bottom, #cccccc, #46949d);
-  background-repeat: repeat-x;
-  border: 1px solid #3e838b;
+  background-color: #46949d;
+  background-image: none;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
   -webkit-border-radius: 4px;
      -moz-border-radius: 4px;
           border-radius: 4px;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffcccccc', endColorstr='#ff46949d', GradientType=0);
   *zoom: 1;
-  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
-     -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
-          box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
 }
 
 .kl .navbar-inner:before,
@@ -4551,7 +4553,6 @@ textarea.span1,
   font-size: 20px;
   font-weight: 200;
   color: #ffffff;
-  text-shadow: 0 1px 0 #cccccc;
 }
 
 .kl .navbar .brand:hover {
@@ -4743,7 +4744,7 @@ textarea.span1,
   padding: 5px 15px 5px;
   color: #ffffff;
   text-decoration: none;
-  text-shadow: 0 1px 0 #cccccc;
+  text-shadow: none;
 }
 
 .kl .navbar .nav .dropdown-toggle .caret {
@@ -4936,7 +4937,6 @@ textarea.span1,
 .kl .navbar-inverse .brand,
 .kl .navbar-inverse .nav > li > a {
   color: #333333;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
 
 .kl .navbar-inverse .brand:hover,
