@@ -1,7 +1,11 @@
 BOOTSTRAP = ./docs/assets/css/bootstrap.css
+BOOTSTRAP_CUSTOM = ./docs/assets/css/bootstrap.custom.css
 BOOTSTRAP_LESS = ./less/bootstrap.less
 BOOTSTRAP_RESPONSIVE = ./docs/assets/css/bootstrap-responsive.css
 BOOTSTRAP_RESPONSIVE_LESS = ./less/responsive.less
+ORIGINAL_VARIABLES_LESS = ./less/variables_original.less
+CUSTOM_VARIABLES_LESS = ./less/variables_custom.less
+COMPILED_VARIABLES_LESS = ./less/variables.less
 DATE=$(shell date +%I:%M%p)
 CHECK=\033[32m✔\033[39m
 HR=\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#
@@ -18,9 +22,13 @@ build:
 	@jshint js/*.js --config js/.jshintrc
 	@jshint js/tests/unit/*.js --config js/.jshintrc
 	@echo "Running JSHint on javascript...             ${CHECK} Done"
+	@cp ${ORIGINAL_VARIABLES_LESS} ${COMPILED_VARIABLES_LESS}
 	@recess --compile ${BOOTSTRAP_LESS} > ${BOOTSTRAP}
 	@recess --compile ${BOOTSTRAP_RESPONSIVE_LESS} > ${BOOTSTRAP_RESPONSIVE}
-	@echo "Compiling LESS with Recess...               ${CHECK} Done"
+	@echo "Compiling Original LESS with Recess...      ${CHECK} Done"
+	@cp ${CUSTOM_VARIABLES_LESS} ${COMPILED_VARIABLES_LESS}
+	@recess --compile ${BOOTSTRAP_LESS} > ${BOOTSTRAP_CUSTOM}
+	@echo "Compiling Custom LESS with Recess...        ${CHECK} Done"
 	@node docs/build
 	@cp img/* docs/assets/img/
 	@cp js/*.js docs/assets/js/
@@ -67,8 +75,12 @@ bootstrap:
 	mkdir -p bootstrap/css
 	mkdir -p bootstrap/js
 	cp img/* bootstrap/img/
+	cp ${ORIGINAL_VARIABLES_LESS} ${COMPILED_VARIABLES_LESS}
 	recess --compile ${BOOTSTRAP_LESS} > bootstrap/css/bootstrap.css
 	recess --compress ${BOOTSTRAP_LESS} > bootstrap/css/bootstrap.min.css
+	cp ${CUSTOM_VARIABLES_LESS} ${COMPILED_VARIABLES_LESS}
+	recess --compile ${BOOTSTRAP_LESS} > bootstrap/css/bootstrap.custom.css
+	recess --compress ${BOOTSTRAP_LESS} > bootstrap/css/bootstrap.custom.min.css
 	recess --compile ${BOOTSTRAP_RESPONSIVE_LESS} > bootstrap/css/bootstrap-responsive.css
 	recess --compress ${BOOTSTRAP_RESPONSIVE_LESS} > bootstrap/css/bootstrap-responsive.min.css
 	cat js/bootstrap-transition.js js/bootstrap-alert.js js/bootstrap-button.js js/bootstrap-carousel.js js/bootstrap-collapse.js js/bootstrap-dropdown.js js/bootstrap-modal.js js/bootstrap-tooltip.js js/bootstrap-popover.js js/bootstrap-scrollspy.js js/bootstrap-tab.js js/bootstrap-typeahead.js js/bootstrap-affix.js > bootstrap/js/bootstrap.js
