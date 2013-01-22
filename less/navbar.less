@@ -241,7 +241,8 @@
 }
 
 // Links
-.navbar .nav > li > a {
+.navbar .nav > li > a,
+.navbar .nav > li > a:focus {
   float: none;
   // Vertically center the text given @navbarHeight
   padding: ((@navbarHeight - @baseLineHeight) / 2) 15px ((@navbarHeight - @baseLineHeight) / 2);
@@ -254,7 +255,6 @@
 }
 
 // Hover
-.navbar .nav > li > a:focus,
 .navbar .nav > li > a:hover {
   background-color: @navbarLinkBackgroundHover; // "transparent" is default to differentiate :hover from .active
   color: @navbarLinkColorHover;

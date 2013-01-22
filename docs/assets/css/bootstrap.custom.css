@@ -4739,7 +4739,8 @@ textarea.span1,
   float: left;
 }
 
-.kl .navbar .nav > li > a {
+.kl .navbar .nav > li > a,
+.kl .navbar .nav > li > a:focus {
   float: none;
   padding: 5px 15px 5px;
   color: #ffffff;
@@ -4751,7 +4752,6 @@ textarea.span1,
   margin-top: 8px;
 }
 
-.kl .navbar .nav > li > a:focus,
 .kl .navbar .nav > li > a:hover {
   color: #333333;
   text-decoration: none;
