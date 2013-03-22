@@ -4569,7 +4569,7 @@ textarea.span1,
 }
 
 .kl .navbar-link:hover {
-  color: #333333;
+  color: #ffffff;
 }
 
 .kl .navbar .divider-vertical {
@@ -4753,9 +4753,9 @@ textarea.span1,
 }
 
 .kl .navbar .nav > li > a:hover {
-  color: #333333;
+  color: #ffffff;
   text-decoration: none;
-  background-color: #b8d6dc;
+  background-color: #46949d;
 }
 
 .kl .navbar .nav > .active > a,
