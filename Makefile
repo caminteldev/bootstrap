@@ -23,11 +23,11 @@ build:
 	@jshint js/tests/unit/*.js --config js/.jshintrc
 	@echo "Running JSHint on javascript...             ${CHECK} Done"
 	@cp ${ORIGINAL_VARIABLES_LESS} ${COMPILED_VARIABLES_LESS}
-	@recess --compile ${BOOTSTRAP_LESS} > ${BOOTSTRAP}
-	@recess --compile ${BOOTSTRAP_RESPONSIVE_LESS} > ${BOOTSTRAP_RESPONSIVE}
+	@lessc ${BOOTSTRAP_LESS} > ${BOOTSTRAP}
+	@lessc ${BOOTSTRAP_RESPONSIVE_LESS} > ${BOOTSTRAP_RESPONSIVE}
 	@echo "Compiling Original LESS with Recess...      ${CHECK} Done"
 	@cp ${CUSTOM_VARIABLES_LESS} ${COMPILED_VARIABLES_LESS}
-	@recess --compile ${BOOTSTRAP_LESS} > ${BOOTSTRAP_CUSTOM}
+	@lessc ${BOOTSTRAP_LESS} > ${BOOTSTRAP_CUSTOM}
 	@echo "Compiling Custom LESS with Recess...        ${CHECK} Done"
 	@node docs/build
 	@cp img/* docs/assets/img/
@@ -67,7 +67,7 @@ clean:
 
 #
 # BUILD SIMPLE BOOTSTRAP DIRECTORY
-# recess & uglifyjs are required
+# less & recess & uglifyjs are required globally
 #
 
 bootstrap:
@@ -76,12 +76,12 @@ bootstrap:
 	mkdir -p bootstrap/js
 	cp img/* bootstrap/img/
 	cp ${ORIGINAL_VARIABLES_LESS} ${COMPILED_VARIABLES_LESS}
-	recess --compile ${BOOTSTRAP_LESS} > bootstrap/css/bootstrap.css
+	lessc ${BOOTSTRAP_LESS} > bootstrap/css/bootstrap.css
 	recess --compress ${BOOTSTRAP_LESS} > bootstrap/css/bootstrap.min.css
 	cp ${CUSTOM_VARIABLES_LESS} ${COMPILED_VARIABLES_LESS}
-	recess --compile ${BOOTSTRAP_LESS} > bootstrap/css/bootstrap.custom.css
+	lessc ${BOOTSTRAP_LESS} > bootstrap/css/bootstrap.custom.css
 	recess --compress ${BOOTSTRAP_LESS} > bootstrap/css/bootstrap.custom.min.css
-	recess --compile ${BOOTSTRAP_RESPONSIVE_LESS} > bootstrap/css/bootstrap-responsive.css
+	lessc ${BOOTSTRAP_RESPONSIVE_LESS} > bootstrap/css/bootstrap-responsive.css
 	recess --compress ${BOOTSTRAP_RESPONSIVE_LESS} > bootstrap/css/bootstrap-responsive.min.css
 	cat js/bootstrap-transition.js js/bootstrap-alert.js js/bootstrap-button.js js/bootstrap-carousel.js js/bootstrap-collapse.js js/bootstrap-dropdown.js js/bootstrap-modal.js js/bootstrap-tooltip.js js/bootstrap-popover.js js/bootstrap-scrollspy.js js/bootstrap-tab.js js/bootstrap-typeahead.js js/bootstrap-affix.js > bootstrap/js/bootstrap.js
 	uglifyjs -nc bootstrap/js/bootstrap.js > bootstrap/js/bootstrap.min.tmp.js
