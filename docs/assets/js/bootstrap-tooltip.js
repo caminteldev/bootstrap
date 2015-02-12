@@ -21,7 +21,7 @@
 
 !function ($) {
 
-  "use strict"; // jshint ;_;
+  "use strict"; // jshint 
 
 
  /* TOOLTIP PUBLIC CLASS DEFINITION

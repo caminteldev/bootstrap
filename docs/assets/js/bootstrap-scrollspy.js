@@ -20,7 +20,7 @@
 
 !function ($) {
 
-  "use strict"; // jshint ;_;
+  "use strict"; // jshint 
 
 
  /* SCROLLSPY CLASS DEFINITION

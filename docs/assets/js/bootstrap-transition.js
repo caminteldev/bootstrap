@@ -22,7 +22,7 @@
 
   $(function () {
 
-    "use strict"; // jshint ;_;
+    "use strict"; // jshint 
 
 
     /* CSS TRANSITION SUPPORT (http://www.modernizr.com/)

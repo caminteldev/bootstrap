@@ -7,22 +7,18 @@
  *
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
  */
-
 .kl .clearfix {
   *zoom: 1;
 }
-
 .kl .clearfix:before,
 .kl .clearfix:after {
   display: table;
-  line-height: 0;
   content: "";
+  line-height: 0;
 }
-
 .kl .clearfix:after {
   clear: both;
 }
-
 .kl .hide-text {
   font: 0/0 a;
   color: transparent;
@@ -30,37 +26,30 @@
   background-color: transparent;
   border: 0;
 }
-
 .kl .input-block-level {
   display: block;
   width: 100%;
   min-height: 30px;
   -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
-
 .kl .hidden {
   display: none;
   visibility: hidden;
 }
-
 .kl .visible-phone {
   display: none !important;
 }
-
 .kl .visible-tablet {
   display: none !important;
 }
-
 .kl .hidden-desktop {
   display: none !important;
 }
-
 .kl .visible-desktop {
   display: inherit !important;
 }
-
 @media (min-width: 768px) and (max-width: 979px) {
   .kl .hidden-desktop {
     display: inherit !important;
@@ -75,7 +64,6 @@
     display: none !important;
   }
 }
-
 @media (max-width: 767px) {
   .kl .hidden-desktop {
     display: inherit !important;
@@ -90,7 +78,6 @@
     display: none !important;
   }
 }
-
 @media (min-width: 1200px) {
   .kl .row {
     margin-left: -30px;
@@ -99,8 +86,8 @@
   .kl .row:before,
   .kl .row:after {
     display: table;
-    line-height: 0;
     content: "";
+    line-height: 0;
   }
   .kl .row:after {
     clear: both;
@@ -195,22 +182,22 @@
   .kl .row-fluid:before,
   .kl .row-fluid:after {
     display: table;
-    line-height: 0;
     content: "";
+    line-height: 0;
   }
   .kl .row-fluid:after {
     clear: both;
   }
   .kl .row-fluid [class*="span"] {
     display: block;
-    float: left;
     width: 100%;
     min-height: 30px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
     margin-left: 2.564102564102564%;
     *margin-left: 2.5109110747408616%;
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
   }
   .kl .row-fluid [class*="span"]:first-child {
     margin-left: 0;
@@ -367,64 +354,40 @@
   .kl .controls-row [class*="span"] + [class*="span"] {
     margin-left: 30px;
   }
-  .kl input.span12,
-  textarea.span12,
-  .uneditable-input.span12 {
+  .kl input.span12, textarea.span12, .uneditable-input.span12 {
     width: 1156px;
   }
-  .kl input.span11,
-  textarea.span11,
-  .uneditable-input.span11 {
+  .kl input.span11, textarea.span11, .uneditable-input.span11 {
     width: 1056px;
   }
-  .kl input.span10,
-  textarea.span10,
-  .uneditable-input.span10 {
+  .kl input.span10, textarea.span10, .uneditable-input.span10 {
     width: 956px;
   }
-  .kl input.span9,
-  textarea.span9,
-  .uneditable-input.span9 {
+  .kl input.span9, textarea.span9, .uneditable-input.span9 {
     width: 856px;
   }
-  .kl input.span8,
-  textarea.span8,
-  .uneditable-input.span8 {
+  .kl input.span8, textarea.span8, .uneditable-input.span8 {
     width: 756px;
   }
-  .kl input.span7,
-  textarea.span7,
-  .uneditable-input.span7 {
+  .kl input.span7, textarea.span7, .uneditable-input.span7 {
     width: 656px;
   }
-  .kl input.span6,
-  textarea.span6,
-  .uneditable-input.span6 {
+  .kl input.span6, textarea.span6, .uneditable-input.span6 {
     width: 556px;
   }
-  .kl input.span5,
-  textarea.span5,
-  .uneditable-input.span5 {
+  .kl input.span5, textarea.span5, .uneditable-input.span5 {
     width: 456px;
   }
-  .kl input.span4,
-  textarea.span4,
-  .uneditable-input.span4 {
+  .kl input.span4, textarea.span4, .uneditable-input.span4 {
     width: 356px;
   }
-  .kl input.span3,
-  textarea.span3,
-  .uneditable-input.span3 {
+  .kl input.span3, textarea.span3, .uneditable-input.span3 {
     width: 256px;
   }
-  .kl input.span2,
-  textarea.span2,
-  .uneditable-input.span2 {
+  .kl input.span2, textarea.span2, .uneditable-input.span2 {
     width: 156px;
   }
-  .kl input.span1,
-  textarea.span1,
-  .uneditable-input.span1 {
+  .kl input.span1, textarea.span1, .uneditable-input.span1 {
     width: 56px;
   }
   .kl .thumbnails {
@@ -437,7 +400,6 @@
     margin-left: 0;
   }
 }
-
 @media (min-width: 768px) and (max-width: 979px) {
   .kl .row {
     margin-left: -20px;
@@ -446,8 +408,8 @@
   .kl .row:before,
   .kl .row:after {
     display: table;
-    line-height: 0;
     content: "";
+    line-height: 0;
   }
   .kl .row:after {
     clear: both;
@@ -542,22 +504,22 @@
   .kl .row-fluid:before,
   .kl .row-fluid:after {
     display: table;
-    line-height: 0;
     content: "";
+    line-height: 0;
   }
   .kl .row-fluid:after {
     clear: both;
   }
   .kl .row-fluid [class*="span"] {
     display: block;
-    float: left;
     width: 100%;
     min-height: 30px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
     margin-left: 2.7624309392265194%;
     *margin-left: 2.709239449864817%;
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
   }
   .kl .row-fluid [class*="span"]:first-child {
     margin-left: 0;
@@ -714,86 +676,61 @@
   .kl .controls-row [class*="span"] + [class*="span"] {
     margin-left: 20px;
   }
-  .kl input.span12,
-  textarea.span12,
-  .uneditable-input.span12 {
+  .kl input.span12, textarea.span12, .uneditable-input.span12 {
     width: 710px;
   }
-  .kl input.span11,
-  textarea.span11,
-  .uneditable-input.span11 {
+  .kl input.span11, textarea.span11, .uneditable-input.span11 {
     width: 648px;
   }
-  .kl input.span10,
-  textarea.span10,
-  .uneditable-input.span10 {
+  .kl input.span10, textarea.span10, .uneditable-input.span10 {
     width: 586px;
   }
-  .kl input.span9,
-  textarea.span9,
-  .uneditable-input.span9 {
+  .kl input.span9, textarea.span9, .uneditable-input.span9 {
     width: 524px;
   }
-  .kl input.span8,
-  textarea.span8,
-  .uneditable-input.span8 {
+  .kl input.span8, textarea.span8, .uneditable-input.span8 {
     width: 462px;
   }
-  .kl input.span7,
-  textarea.span7,
-  .uneditable-input.span7 {
+  .kl input.span7, textarea.span7, .uneditable-input.span7 {
     width: 400px;
   }
-  .kl input.span6,
-  textarea.span6,
-  .uneditable-input.span6 {
+  .kl input.span6, textarea.span6, .uneditable-input.span6 {
     width: 338px;
   }
-  .kl input.span5,
-  textarea.span5,
-  .uneditable-input.span5 {
+  .kl input.span5, textarea.span5, .uneditable-input.span5 {
     width: 276px;
   }
-  .kl input.span4,
-  textarea.span4,
-  .uneditable-input.span4 {
+  .kl input.span4, textarea.span4, .uneditable-input.span4 {
     width: 214px;
   }
-  .kl input.span3,
-  textarea.span3,
-  .uneditable-input.span3 {
+  .kl input.span3, textarea.span3, .uneditable-input.span3 {
     width: 152px;
   }
-  .kl input.span2,
-  textarea.span2,
-  .uneditable-input.span2 {
+  .kl input.span2, textarea.span2, .uneditable-input.span2 {
     width: 90px;
   }
-  .kl input.span1,
-  textarea.span1,
-  .uneditable-input.span1 {
+  .kl input.span1, textarea.span1, .uneditable-input.span1 {
     width: 28px;
   }
 }
-
 @media (max-width: 767px) {
   .kl body {
-    padding-right: 20px;
     padding-left: 20px;
+    padding-right: 20px;
   }
   .kl .navbar-fixed-top,
   .kl .navbar-fixed-bottom,
   .kl .navbar-static-top {
-    margin-right: -20px;
     margin-left: -20px;
+    margin-right: -20px;
   }
   .kl .container-fluid {
     padding: 0;
   }
   .kl .dl-horizontal dt {
     float: none;
-    width: auto;
     clear: none;
+    width: auto;
     text-align: left;
   }
   .kl .dl-horizontal dd {
@@ -815,20 +752,20 @@
   }
   .kl [class*="span"],
   .kl .row-fluid [class*="span"] {
-    display: block;
     float: none;
+    display: block;
     width: 100%;
     margin-left: 0;
     -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
   }
   .kl .span12,
   .kl .row-fluid .span12 {
     width: 100%;
     -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
   }
   .kl .input-large,
   .kl .input-xlarge,
@@ -841,8 +778,8 @@
     width: 100%;
     min-height: 30px;
     -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
   }
   .kl .input-prepend input,
   .kl .input-append input,
@@ -857,8 +794,8 @@
   .kl .modal {
     position: fixed;
     top: 20px;
-    right: 20px;
     left: 20px;
+    right: 20px;
     width: auto;
     margin: 0;
   }
@@ -866,7 +803,6 @@
     top: auto;
   }
 }
-
 @media (max-width: 480px) {
   .kl .nav-collapse {
     -webkit-transform: translate3d(0, 0, 0);
@@ -892,13 +828,13 @@
     padding-top: 0;
   }
   .kl .form-horizontal .form-actions {
-    padding-right: 10px;
     padding-left: 10px;
+    padding-right: 10px;
   }
   .kl .modal {
     top: 10px;
-    right: 10px;
     left: 10px;
+    right: 10px;
   }
   .kl .modal-header .close {
     padding: 10px;
@@ -908,7 +844,6 @@
     position: static;
   }
 }
-
 @media (max-width: 979px) {
   .kl body {
     padding-top: 0;
@@ -932,8 +867,8 @@
     padding: 0;
   }
   .kl .navbar .brand {
-    padding-right: 10px;
     padding-left: 10px;
+    padding-right: 10px;
     margin: 0 0 0 -5px;
   }
   .kl .nav-collapse {
@@ -962,15 +897,15 @@
     font-weight: bold;
     color: #333333;
     -webkit-border-radius: 3px;
-       -moz-border-radius: 3px;
-            border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
   }
   .kl .nav-collapse .btn {
     padding: 4px 10px 4px;
     font-weight: normal;
     -webkit-border-radius: 4px;
-       -moz-border-radius: 4px;
-            border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
   }
   .kl .nav-collapse .dropdown-menu li + li a {
     margin-bottom: 2px;
@@ -984,26 +919,26 @@
     background-color: #ffffff;
   }
   .kl .nav-collapse.in .btn-group {
-    padding: 0;
     margin-top: 5px;
+    padding: 0;
   }
   .kl .nav-collapse .dropdown-menu {
     position: static;
     top: auto;
     left: auto;
-    display: block;
     float: none;
+    display: block;
     max-width: none;
-    padding: 0;
     margin: 0 15px;
+    padding: 0;
     background-color: transparent;
     border: none;
     -webkit-border-radius: 0;
-       -moz-border-radius: 0;
-            border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
     -webkit-box-shadow: none;
-       -moz-box-shadow: none;
-            box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
   }
   .kl .nav-collapse .dropdown-menu:before,
   .kl .nav-collapse .dropdown-menu:after {
@@ -1024,8 +959,8 @@
     border-top: 1px solid #e5e5e5;
     border-bottom: 1px solid #e5e5e5;
     -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
-       -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
-            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
   }
   .kl .navbar-inverse .nav-collapse .navbar-form,
   .kl .navbar-inverse .nav-collapse .navbar-search {
@@ -1038,18 +973,17 @@
   }
   .kl .nav-collapse,
   .kl .nav-collapse.collapse {
-    height: 0;
     overflow: hidden;
+    height: 0;
   }
   .kl .navbar .btn-navbar {
     display: block;
   }
   .kl .navbar-static .navbar-inner {
-    padding-right: 10px;
     padding-left: 10px;
+    padding-right: 10px;
   }
 }
-
 @media (min-width: 980px) {
   .kl .nav-collapse.collapse {
     height: auto !important;
