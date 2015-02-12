@@ -82,10 +82,10 @@ Developers
 We have included a makefile with convenience methods for working with the Bootstrap library.
 
 + **dependencies**
-Our makefile depends on you having recess, connect, uglify.js, and jshint installed. To install, just run the following command in npm:
+Our makefile depends on you having recess, connect, uglify.js, less, and jshint installed. To install, just run the following command in npm:
 
 ```
-$ npm install recess connect uglify-js jshint -g
+$ npm install recess@1.0.3 connect uglify-js@1.2.6 less@1.3.3 jshint -g
 ```
 
 + **build** - `make`
